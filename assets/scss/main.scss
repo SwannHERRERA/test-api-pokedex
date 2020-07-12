@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+* {
+  font-family: 'Lato';
+}
+
+$red: #fc6c6d;
+$green: #49d0b0;
+$blue: #75bdfd;
+$yellow: #ffd771;
+$light-lime: #dce775;
+$dark-red: #d50000;
+$purlple: #6a1b9a;
+$teal: #b2dfdb;
+$dark-teal: #00796b;
+$deep-purlple: #512da8;
+$green-50-400: #66bb6a;
+$indigo: #1a237e;
+$blue-gray: #546e7a;
+$pink: #f06292;
+$ligth-blue: #90caf9;
+$brown: #8d6e63;
+$dark-grey: #424242;
+$types: (
+  'fire': $red,
+  'grass': $green,
+  'water': $blue,
+  'electric': $yellow,
+  'normal': $light-lime,
+  'fighting': $dark-red,
+  'flying': $teal,
+  'poison': $purlple,
+  'ground': $dark-teal,
+  'psychic': #aa00ff,
+  'bug': $green-50-400,
+  'ghost': $deep-purlple,
+  'dragon': $indigo,
+  'steel': $blue-gray,
+  'fairy': $pink,
+  'ice': $ligth-blue,
+  'rock': $brown,
+  'dark': $dark-grey,
+);
+
+@each $type, $value in $types {
+  .card.#{$type} {
+    background-color: $value;
+  }
+  .single.#{$type} {
+    background-color: $value;
+  }
+}
+
+.top-menu {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 1.25rem;
+}
+
+.h1 {
+  color: #1d1d1d;
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-left: 2rem;
+}
