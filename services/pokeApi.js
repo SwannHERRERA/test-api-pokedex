@@ -2,7 +2,7 @@ const err = (err) => err
 // console.error(err)
 export async function getPokemons(offset) {
   const res = await fetch(
-    `http://pokeapi.co/api/v2/pokemon?offset=${offset}&limit=10`
+    `https://pokeapi.co/api/v2/pokemon?offset=${offset}&limit=10`
   ).catch(err)
   const pokemons = await res.json()
   return pokemons

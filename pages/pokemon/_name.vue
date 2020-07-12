@@ -115,7 +115,7 @@ export default {
   methods: {
     getFullPokemon() {
       getPokemon(
-        `http://pokeapi.co/api/v2/pokemon/${this.$route.params.name}`
+        `https://pokeapi.co/api/v2/pokemon/${this.$route.params.name}`
       ).then((pokemon) => {
         this.Pokemon = pokemon
       })
