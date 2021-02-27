@@ -1,5 +1,7 @@
 # pokedex
 
+![resutat](assets/pokedex-resultat.png)
+
 ## Build Setup
 
 ```bash
